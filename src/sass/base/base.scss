@@ -1,0 +1,38 @@
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+
+}
+
+body {
+  font-family: 'Scheherazade', serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+
+main{
+  max-width: 90rem;
+  margin: 10rem auto;
+  padding-right: 2rem;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}

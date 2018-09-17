@@ -1,0 +1,19 @@
+.posts-layout{
+  flex: 0 0 65%;
+
+
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port){
+    flex: 0 0 75%;
+  }
+
+  @include respond(phone){
+    flex: 0 0 85%;
+  }
+
+  @include respond(mini-phone){
+    flex: 0 0 99%;
+  }
+}

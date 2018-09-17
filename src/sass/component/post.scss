@@ -1,0 +1,102 @@
+.post{
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid $color-grey-light-2;
+  border-radius: 10px;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,.05);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child){
+    margin-bottom: 6rem;
+
+    @include respond(tab-port){
+      margin-bottom: 4rem;
+    }
+
+    @include respond(phone){
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__head{
+    padding: 1rem 1rem;
+    border-bottom: 1px solid $color-grey-light-2;
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &__user-box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+
+  &__user-photo{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+
+  }
+
+  &__user-name{
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+  }
+
+
+  &__content{
+    overflow: hidden;
+
+    &--image-box{
+      width: 100%;
+
+    }
+
+    &--image{
+      width: 100%;
+      height: 100%;
+    }
+
+    &--news{
+      padding: 1rem 1.25rem;
+      font-size: 1.25rem;
+      font-weight: 300;
+      width: 100%;
+      direction: rtl;
+    }
+
+  }
+
+  &__likebar{
+    border-top: 1px solid $color-grey-light-2;
+    font-size: 1.5rem;
+    padding: 1rem 1.25rem;
+
+
+    display: flex;
+    direction: rtl;
+    flex-direction: row;
+    align-items: center;
+
+
+  }
+
+}
+
+
+
+
+
+

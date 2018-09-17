@@ -1,0 +1,14 @@
+.heart {
+  fill: $color-grey-light-3;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-bottom: .25rem;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  display: flex;
+
+  &:hover{
+    fill: $color-primary-dark;
+  }
+}
